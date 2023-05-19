@@ -1,4 +1,5 @@
-# Graphics-Using-Python
+# Graphics-Using-Python-Turtle
+
 "Graphic using Python turtle" is a dynamic GitHub repository that provides an extensive collection of Python scripts for creating graphics using the Python turtle library. With easy-to-understand code examples, the repository enables users to generate visually stunning graphics and animations. The turtle library offers an intuitive interface, making it accessible for beginners to learn and experiment with computer graphics.
 
 The repository covers a wide range of functionalities, allowing users to create simple and complex shapes, explore diverse color palettes, and experiment with different line styles and thicknesses. Each code example is well-documented, providing clear explanations and instructions for customization. This makes it an excellent resource for individuals looking to enhance their coding skills and understand fundamental programming concepts.
@@ -41,16 +42,13 @@ from random import randint
 
 speed(0)
 bgcolor("black")
-
 x=1
 while x<=400:
     r=randint(0,255)
     g=randint(0,255)
     b=randint(0,255)
     colormode(255)
-
     pencolor(r,g,b)
-
     fd(50+x)
     rt(90.911)
     x=x+1
@@ -60,7 +58,6 @@ exitonclick()
 
 ### Output
 ![](images/Output02.png)
-
 
 ## Deployment Project Pattern03.py
 ### To deploy this project run
@@ -77,7 +74,9 @@ for x in range(360):
     forward(x)
     left(59)
 ```
+
 ### Output
+![](images/Output03.png)
 
 ## Deployment Project Pattern04.py
 ### To deploy this project run
@@ -107,7 +106,9 @@ turtle.speed('fast')
 turtle.pensize(4)
 draw_shape(15, 0, 1, 'circle')
 ```
+
 ### Output
+![](images/Output04.png)
 
 ## Deployment Project Pattern05.py
 ### To deploy this project run
@@ -147,7 +148,9 @@ while True:
     ranY = randint(-250, 250)
     draw_star(ranPts, ranSize, ranCol, ranX, ranY)
 ```
+
 ### Output
+![](images/Output05.png)
 
 ## Deployment Project Pattern06.py
 ### To deploy this project run
@@ -169,7 +172,9 @@ for i in range(45):
 t.update()
 exitonclick()
 ```
+
 ### Output
+![](images/Output06.png)
 
 ## Deployment Project Pattern07.py
 ### To deploy this project run
@@ -178,6 +183,7 @@ import turtle as t
 from turtle import *
 
 t.reset()
+t.bgcolor('black')
 t.color("red")
 t.speed(0)
 for angle in range(0, 360, 15):
@@ -186,7 +192,9 @@ for angle in range(0, 360, 15):
 
 exitonclick()
 ```
+
 ### Output
+![](images/Output07.png)
 
 ## Deployment Project Pattern08.py
 ### To deploy this project run
@@ -194,6 +202,8 @@ exitonclick()
 import turtle as t
 from turtle import *
 
+n = 0
+start_points = [[-300, 250], [-150, 250],[-300, 110], [-80, 110],[-300, -150], [50, -150]]
 t.bgcolor('black')
 
 def drawfib(n, len_ang):
@@ -207,10 +217,7 @@ def drawfib(n, len_ang):
         drawfib(n - 2, len_ang)
         t.left(len_ang)
     t.backward(2 * len_ang)
-
-start_points = [[-300, 250], [-150, 250],[-300, 110], [-80, 110],[-300, -150], [50, -150]]
-
-n = 0
+    
 for start_point in start_points:
     x, y = start_point
     n = n + 1
@@ -222,7 +229,9 @@ for start_point in start_points:
 
 exitonclick()
 ```
+
 ### Output
+![](images/Output08.png)
 
 ## Deployment Project Pattern09.py
 ### To deploy this project run
@@ -230,6 +239,7 @@ exitonclick()
 import turtle as t
 from turtle import *
 
+t.bgcolor('black')
 t.reset()
 t.tracer(0, 0)
 
@@ -246,8 +256,7 @@ def ks(length, d):
         ks(length, d)
         t.right(60)
         ks(length, d)
-
-
+        
 colors = ["red", "orange", "pink"]
 for i in range(3):
     t.color(colors[i])
@@ -257,7 +266,9 @@ for i in range(3):
 t.update()
 exitonclick()
 ```
+
 ### Output
+![](images/Output09.png)
 
 ## Deployment Project Pattern10.py
 ### To deploy this project run
@@ -276,26 +287,23 @@ t.pencolor("yellow")
 def shape(angle, side, limit):
     reverseDirection=200
     t.forward(side)
-
     if side%(reverseDirection*2)==0:
         angle=angle+2
         print(side)
-
     elif side%(reverseDirection)==0:
         angle=angle-2
         print(side)
-    
     t.right(angle)
     side=side+2
-
     if side<limit:
         shape(angle,side,limit)
-
-
+        
 shape(119, 0 ,600)
 window.exitonclick()
 ```
+
 ### Output
+![](images/Output10.png)
 
 ## Deployment Project Pattern11.py
 ### To deploy this project run
@@ -323,7 +331,9 @@ for i in range(411):
 
 done()
 ```
+
 ### Output
+![](images/Output11.png)
 
 ## Deployment Project Pattern12.py
 ### To deploy this project run
@@ -346,7 +356,9 @@ for i in range(120):
         t.end_fill()
 t.mainloop()
 ```
+
 ### Output
+![](images/Output12.png)
 
 ## Deployment Project Pattern13.py
 ### To deploy this project run
@@ -367,7 +379,9 @@ for i in range(200):
     forward(3)
 done()
 ```
+
 ### Output
+![](images/Output13.png)
 
 
 If you have any confusion, please feel free to contact me. Thank you
