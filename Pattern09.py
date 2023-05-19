@@ -1,6 +1,7 @@
 import turtle as t
 from turtle import *
 
+t.bgcolor('black')
 t.reset()
 t.tracer(0, 0)
 
