@@ -194,6 +194,8 @@ exitonclick()
 import turtle as t
 from turtle import *
 
+t.bgcolor('black')
+
 def drawfib(n, len_ang):
     t.forward(2 * len_ang)
     if n == 0 or n == 1:
@@ -208,11 +210,16 @@ def drawfib(n, len_ang):
 
 start_points = [[-300, 250], [-150, 250],[-300, 110], [-80, 110],[-300, -150], [50, -150]]
 
-t.reset()
-t.tracer(0, 0)
-drawfib(30, 15)
-t.update()
-t.tracer(1, 15)
+n = 0
+for start_point in start_points:
+    x, y = start_point
+    n = n + 1
+    t.penup()
+    t.setpos(x, y)
+    t.color("red")
+    t.pendown()
+    drawfib(n, 30)
+
 exitonclick()
 ```
 ### Output
@@ -349,6 +356,7 @@ from turtle import *
 bgcolor("black")
 speed(0)
 hideturtle()
+goto(60, 150)
 
 for i in range(200):
     color("red")
