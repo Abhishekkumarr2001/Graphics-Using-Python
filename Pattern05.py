@@ -23,7 +23,6 @@ def draw_planet(col, x, y):
     t.circle(50)
     t.end_fill()
 
-# Main code
 t.Screen().bgcolor('black') 
 while True:
     ranPts = randint(2, 5) * 2 + 1
