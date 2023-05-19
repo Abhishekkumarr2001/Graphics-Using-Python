@@ -29,7 +29,9 @@ turtle.speed('fast')
 turtle.pensize(1)
 draw_circle(30)
 ```
+
 ### Output
+![](images/Output01.png)
 
 ## Deployment Project Pattern02.py
 ### To deploy this project run
@@ -55,7 +57,10 @@ while x<=400:
 
 exitonclick()
 ```
+
 ### Output
+![](images/Output02.png)
+
 
 ## Deployment Project Pattern03.py
 ### To deploy this project run
