@@ -29,6 +29,7 @@ turtle.speed('fast')
 turtle.pensize(1)
 draw_circle(30)
 ```
+### Output
 
 ## Deployment Project Pattern02.py
 ### To deploy this project run
@@ -54,6 +55,7 @@ while x<=400:
 
 exitonclick()
 ```
+### Output
 
 ## Deployment Project Pattern03.py
 ### To deploy this project run
@@ -70,6 +72,7 @@ for x in range(360):
     forward(x)
     left(59)
 ```
+### Output
 
 ## Deployment Project Pattern04.py
 ### To deploy this project run
@@ -99,6 +102,7 @@ turtle.speed('fast')
 turtle.pensize(4)
 draw_shape(15, 0, 1, 'circle')
 ```
+### Output
 
 ## Deployment Project Pattern05.py
 ### To deploy this project run
@@ -138,6 +142,7 @@ while True:
     ranY = randint(-250, 250)
     draw_star(ranPts, ranSize, ranCol, ranX, ranY)
 ```
+### Output
 
 ## Deployment Project Pattern06.py
 ### To deploy this project run
@@ -159,6 +164,7 @@ for i in range(45):
 t.update()
 exitonclick()
 ```
+### Output
 
 ## Deployment Project Pattern07.py
 ### To deploy this project run
@@ -175,6 +181,7 @@ for angle in range(0, 360, 15):
 
 exitonclick()
 ```
+### Output
 
 ## Deployment Project Pattern08.py
 ### To deploy this project run
@@ -203,6 +210,7 @@ t.update()
 t.tracer(1, 15)
 exitonclick()
 ```
+### Output
 
 ## Deployment Project Pattern09.py
 ### To deploy this project run
@@ -237,6 +245,7 @@ for i in range(3):
 t.update()
 exitonclick()
 ```
+### Output
 
 ## Deployment Project Pattern10.py
 ### To deploy this project run
@@ -274,6 +283,7 @@ def shape(angle, side, limit):
 shape(119, 0 ,600)
 window.exitonclick()
 ```
+### Output
 
 ## Deployment Project Pattern11.py
 ### To deploy this project run
@@ -301,6 +311,7 @@ for i in range(411):
 
 done()
 ```
+### Output
 
 ## Deployment Project Pattern12.py
 ### To deploy this project run
@@ -323,6 +334,7 @@ for i in range(120):
         t.end_fill()
 t.mainloop()
 ```
+### Output
 
 ## Deployment Project Pattern13.py
 ### To deploy this project run
@@ -340,10 +352,9 @@ for i in range(200):
     circle(i*0.8)
     right(3)
     forward(3)
-
 done()
-
 ```
+### Output
 
 
 If you have any confusion, please feel free to contact me. Thank you
